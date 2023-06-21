@@ -9,14 +9,11 @@ var posts = []
 
 function addPostTable(title, posts) {
     post_tables.push(title)
+    post_table_div.innerHTML = post_tables
 }
 function setEmail(youremail) {
     email = youremail
 }
-for(var i=1; i< post_tables.length; i++){
-    console.log(post_tables)
-}
-
 
 
 
