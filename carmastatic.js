@@ -9,12 +9,10 @@ var posts = []
 
 function addPostTable(title, posts) {
     post_tables.push(title)
-    post_table_div.innerHTML = post_tables
 }
 function setEmail(youremail) {
     email = youremail
 }
-
 
 
 var update_index = 0
@@ -37,6 +35,9 @@ function update(){
         }
     }
     update_index += 1
+    if (update_index <= post_tables.length) {
+        post_table_div.innerHTML = post_table_div.innerHTML + "<h1>" + post_tables[update_index - 1] + "</h1>"
+    }
     if(update_index <= 1){
         setTimeout(update, 1)
     }else{
