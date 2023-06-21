@@ -1,4 +1,4 @@
-email = "amirmohammad7@gmail.com"
+email = "amirmohammadmehdipour7@gmail.com"
 linkedinacount = "https://linkedin.com"
 footer_description = "Lorem Ipsum"
 addPostTable('Hello', posts)
