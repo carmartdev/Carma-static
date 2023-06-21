@@ -2,7 +2,11 @@
 A javascript module to create static websites and weblogs better and easier
 # Tutorials and informations
 ## Footer-contact
-It is a division or a tag with ```id="footer-contact"``` (like ```<div id="footer-contact"></div>```)
+It is a division or a tag with ```id="footer-contact"``` (like ```<div id="footer-contact"></div>```) and it's for contact informations in the footer section.
+You have to add a script after the carmastatic.js and in that script you can set these variables as contact informations and you or your teams informations; these are the variables:
+
+## Post-table
+It is a division or a tag with ```id="post-table"``` (like ```<div id="post-table"></div>```) and it's for the sections which contains diffrent posts.
 # License
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
