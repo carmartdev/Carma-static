@@ -1,5 +1,6 @@
 var footer_contact = document.getElementById("footer-contact")
 var post_table_div = document.getElementById("post-table")
+var post = document.getElementsByClassName("post")
 var admins_count = 1
 var linkedinacount = null
 var email = null
@@ -10,6 +11,20 @@ var posts = []
 function addPostTable(title, posts) {
     post_tables.push(title)
 }
+var post_index = 0
+function addPost(title, paragraphs, image_addres){
+    posts.push([title, paragraphs, image_addres])
+    if (post_index<=posts.length) {
+    post.innerHTML = post.innerHTML + "<h3>"+ posts[post_index - 1] +"</h3>"
+    post.innerHTML = post.innerHTML + "<p>"+ posts[post_index - 1] +"</p>"
+    post.innerHTML = post.innerHTML + "<h3>"+ posts[post_index - 1] +"</h3>"
+    post.innerHTML = "huyuyu"
+    }
+    post_index++
+    alert(post_index, posts[post_index])
+    setTimeout(addPost, 500)
+}
+addPost('Hllo ol', 'paaaph is any', 'imas/s.pn')
 function setEmail(youremail) {
     email = youremail
 }
